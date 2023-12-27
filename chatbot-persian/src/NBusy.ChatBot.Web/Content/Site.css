@@ -1,0 +1,97 @@
+﻿@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/iransans/IRANSansWeb.eot');
+    src: url('fonts/iransans/IRANSansWeb.eot?#iefix') format('embedded-opentype'),url('fonts/iransans/IRANSansWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/yekan/Yekan.eot');
+    src: url('fonts/yekan/Yekan.eot?#iefix') format('embedded-opentype'),url('fonts/yekan/Yekan.ttf') format('truetype');
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    direction: rtl;
+    font-family: IRANSans;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: IRANSans;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.jumbotron-mini {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+blockquote {
+    padding: 5px 10px;
+}
+
+    blockquote footer {
+        font-size: 80%;
+    }
+
+        blockquote footer::before {
+            content: '\2014 \00A0'
+        }
+
+    blockquote.blockquote-reverse {
+        text-align: left;
+        border-right: 0;
+        border-left: 5px solid #EEE
+    }
+
+        blockquote.blockquote-reverse footer::before {
+            content: ''
+        }
+
+        blockquote.blockquote-reverse footer::after {
+            content: '\00A0 \2014'
+        }
+
+/* Chat */
+.chat-wrapper {
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    overflow: auto;
+}
+
+#chat-input-text + .input-group-btn {
+    vertical-align: top;
+}

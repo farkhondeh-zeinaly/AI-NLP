@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <item name="name" value="کاربر خوب" />
+  <item name="he" value="یک نفر" />
+  <item name="she" value="یک نفر" />
+  <item name="it" value="یک چیزی" />
+  <item name="they" value="یک چیزی" />
+  <item name="age" value="سن" />
+  <item name="birthday" value="تولد" />
+  <item name="boyfriend" value="unknown" />
+  <item name="brother" value="برادر" />
+  <item name="cat" value="گربه" />
+  <item name="does" value="مشغول" />
+  <item name="dog" value="سگ" />
+  <item name="email" value="ایمیل" />
+  <item name="father" value="پدر" />
+  <item name="favcolor" value="آبی" />
+  <item name="favmovie" value="ماتریکس" />
+  <item name="friend" value="دوست" />
+  <item name="fullname" value="نام کامل" />
+  <item name="gender" value="مرد" />
+  <item name="girlfriend" value="unknown" />
+  <item name="has" value="داشته ها" />
+  <item name="heard" value="unknown" />
+  <item name="husband" value="unknown" />
+  <item name="is" value="unknown" />
+  <item name="job" value="برنامه نویس" />
+  <item name="lastname" value="نام خانوادگی" />
+  <item name="like" value="unknown" />
+  <item name="location" value="تهران" />
+  <item name="looklike" value="unknown" />
+  <item name="memory" value="unknown" />
+  <item name="meta" value="unknown" />
+  <item name="nickname" value="unknown" />
+  <item name="middlename" value="unknown" />
+  <item name="mother" value="مادر" />
+  <item name="password" value="unknown" />
+  <item name="personality" value="unknown" />
+  <item name="phone" value="unknown" />
+  <item name="sign" value="unknown" />
+  <item name="sister" value="خواهر" />
+  <item name="them" value="unknown" />
+  <item name="thought" value="unknown" />
+  <item name="want" value="unknown" />
+  <item name="we" value="unknown" />
+</root>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+<!-- Free software &copy; 2001-2003 ALICE A.I. Foundation. -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.01 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Annotated Version updated September 2003 -->
+<category><pattern>ممنوع</pattern><template>   <srai>INTERJECTION </srai>    </template></category>  
+<category><pattern>از این گذشته</pattern><template>   <srai>INTERJECTION </srai>    </template></category>  
+<category><pattern>البته</pattern><template>   <srai>INTERJECTION</srai>    </template></category>  
+<category><pattern>اوه</pattern><template>   <srai>INTERJECTION</srai>    </template></category>  
+<category><pattern>بسیار خوب</pattern><template>   <srai>INTERJECTION</srai>    </template></category>  
+<category><pattern>پس</pattern><template><srai>INTERJECTION</srai></template></category>  
+<category><pattern>اوم</pattern><template>   <srai>INTERJECTION</srai>    </template></category>  
+<category><pattern>بله</pattern><template><srai>INTERJECTION</srai></template></category>  
+<category><pattern>نه</pattern><template><random><li>مشکلی نیست.</li><li>اوه خیلی خوب.</li><li>خوب پس... مشکلی نیست</li><li>آیا شما مطمئنی؟</li><li>خوبه, شما همیشه می توانید نظرتان را بعدا تغییر دهید.</li></random></template></category>  
+<category><pattern>INTERJECTION</pattern><template><random>  <li>بسیار خوب.</li>  <li>اه.</li>  <li>پس؟</li>  <li>آه.</li>  <li>آوو.</li>  <li>اوه.</li>  <li>آها.</li>  <li>هی.</li>  <li>همم.</li>  <li>ممم.</li>  <li>آره.</li>  <li>اوف.</li>  <li>ووه!</li>  <li>اه!</li>  <li>و؟</li>  <li>رفیق!</li>  <li>خدایا!</li>  <li>اهم.</li>  <li>رفیق!</li>  <li>عالی.</li>  <li>می دانم.</li>  <li>واقعا.</li>  <li>ممنوع.</li>  <li>هورا!</li>  <li>هوررا!</li>  <li>عالی.</li>  <li>بیا.</li>  <li>دوره.</li>  <li>درسته.</li>  <li>ببخشید!</li>  <li>مرا ببخشید؟</li>  <li>من می شنوم.</li>  <li>باحال بود.</li>  <li>خوب دیگه.</li>  <li>بیخیال.</li>  <li>می فهمم.</li>  <li>بیشتر بگو.</li>  <li>خیلی خوبه.</li>  <li>سوال بعدی؟</li>  <li>خوبه.</li>  <li>یک استراحت به من بده.</li>  <li>داری شوخی می کنی؟</li>  <li>بله درسته.</li>  <li>جالبه.</li>  <li>چگونه می توانم کمکتان کنم؟</li>  <li>"<that/>"? <input/>?</li>  <li>من مردم را قضاوت نمی کنم.</li>  <li>من بدون گفتم می روم.</li> <li>من از جواب های یک کلمه ای متنفرم.</li> </random>  
+</template></category>  
+<category><pattern>لعنت خدا *</pattern><template><srai>INTERJECTION</srai></template></category> 
+</aiml>

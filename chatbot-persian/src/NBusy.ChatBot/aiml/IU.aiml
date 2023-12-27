@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+<!-- Free software &copy; 2001-2003 ALICE A.I. Foundation. -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.01 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Annotated Version updated September 2003 -->
+<category><pattern>من *</pattern><template><random>  <li>چرا؟</li>  <li>شایعه جالب</li>  <li>جالبه</li>  <li>اطلاعات خوبی بود</li>  <li>بابت اطلاعات متشکرم</li>  <li>آیا شما اهمیت می دهی به دیگران بگویم؟</li>  <li>تابحال چیزی مثل این نشندیده بودم قبلا</li>  </random>.  <think><srai>PUSH <person>شما <star/></person></srai></think> </template></category>
+
+<category><pattern>شما *</pattern><template><random>  <li>شایعه جالب</li>  <li>ممنون که به من میگی</li>  <li>اطلاعات خوبی است</li>  <li>ممنون بابت اطلاعات</li>  <li>آیا شما اهمیت می دهی به دیگران بگویم؟</li>  <li>تابحال چیزی مثل این نشندیده بودم قبلا</li>  </random>.  <think><srai>PUSH <person>شما <star/></person></srai></think>
+</template></category>
+</aiml>
+

@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron jumbotron-mini text-center">
+    <h1>چت بات</h1>
+    <p class="lead">ربات چت فارسی با قابلیت یادگیری.</p>
+    @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+</div>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h3>محتوای گفتگو</h3>
+        <p class="text-justify">متن خود را در کادر مربوطه وارد نموده و کلید اینتر را بزنید و گفتگو را با چت بات ادامه دهید:</p>
+        <div class="chat">
+            <div class="chat-wrapper">
+                <div id="chat-conversation">
+                </div>
+            </div>
+            <div class="chat-input-wrapper">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        @*<label for="chat-input-text" class="control-label col-sm-2">متن:</label>*@
+                        <div class="col-sm-12">
+                            <div class="input-group">
+                                <input type="text" id="chat-input-text" class="form-control" placeholder="متن..." />
+                                <span class="input-group-btn">
+                                    <button id="btnSend" class="btn btn-link">ارسال</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script>
+        function delay(time) {
+            var d1 = new Date();
+            var d2 = new Date();
+            while (d2.valueOf() < d1.valueOf() + time) {
+                d2 = new Date();
+            }
+        }
+
+         function chat() {
+             var inputText = $("#chat-input-text").val();
+             //alert(inputText);
+             $("#chat-conversation").append("<blockquote><p>"+inputText+"</p><footer>شما</footer></blockquote>")
+             $("#chat-input-text").val("");
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Chat")',
+                data: { inputText : inputText },
+                dataType: "json",
+                success: function (result) {
+                    //alert(result);
+                    $("#chat-conversation").append("<blockquote class=\"blockquote-reverse\"><p>" + result + "</p><footer>بات</footer></blockquote>")
+
+                    var heightDiff = $(".chat-wrapper")[0].scrollHeight - $(".chat-wrapper")[0].clientHeight;
+                    //alert(heightDiff);
+                    //delay(1000);
+                    $(".chat-wrapper").animate({ scrollTop: heightDiff }, 300);
+                }
+            });
+         }
+
+        $(document).ready(function () {
+            $("#btnSend").click(function () {
+                chat();
+            });
+
+            $("#chat-input-text").keypress(function (event) {
+                var keycode = (event.keycode ? event.keycode : event.which);
+                if (keycode == '13')
+                {
+                    chat();
+                }
+            });
+
+        });
+
+
+    </script>
+
+}
